@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background:black;
+    width: 100%;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+/* main{
+    background:black;
+    width: 100%;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+} */
+.backgroundimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #3710BD 0%, #A42395 100%);
+}
+.must{
+    /* background-color: green; */
+    width: 500px;
+    height: 550px;
+    z-index: 2;
+  
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.inputMaster{
+    
+    margin:40px auto 20px auto;
+    position: relative;
+}
+.inputMaster input{
+    width: 500px;
+    height: 50px;
+    background-color: #25273D;
+    padding-left: 80px;
+    color:white;
+    font-size: 15px;
+    
+}
+.inputMaster img{
+    position: absolute;
+    top: 14px;
+    left: 40px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 15px;
+    padding: 12px 8px 12px 50px;
+    color: white;
+    position: relative;
+    width: 500px;
+    height: 50px;
+    background-color: #25273D;
+    padding-left: 50px;
+    color:white;
+    font-size: 15px;
+}
+ul li::before{
+    content:' ';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-image: url(/todoapp/assets/images/Oval\ Copy.svg) ;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 16px;
+    cursor: pointer;
+}
+ul li.checked{
+    color: #4D5067;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(/todoapp/assets/images/Group\ 4.png)
+}
+.inputMaster button{
+    position: absolute;
+    top:20px;
+    right:20px;
+    background-color:transparent;
+    border: 0;
+    cursor: pointer;
+    color: #3A7CFD;
+}
+
+.bottom{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: #5B5E7E;;
+}
+.bottom span:hover{
+    color:#3A7CFD;
+}
+
+.bottom div span:nth-child(1){
+    color:#3A7CFD;
+}
+
+ul li span{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    color: #FFF;
+    text-align: center;
+}
+ul li span:hover{
+    background:#3710BD;
+    border-radius:50%;
+
+}
+
+.light-theme{
+    background-color:#FFF
+}
+.change{
+    transform: rotate(90deg);
+}
+
